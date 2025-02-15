@@ -1,7 +1,9 @@
+import styles from './Styles.module.css'
+
 export default function BlogLayout({
-    children,
+children,
 }: {
     children: React.ReactNode
 }) {
-    return <section>{children}</section>
+    return <section className={styles.font}>{children}</section>
 }

@@ -3,13 +3,15 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Roboto } from 'next/font/google'
 import "./globals.css";
 
+import StyledJsxRegistry from "./registry";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
 const roboto = Roboto({
-  weight: '500',
+  weight: '400',
   subsets: ['latin']
 });
 
@@ -30,10 +32,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      {/* <body
         className={`${roboto.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+      </body> */}
+      <body>
+        <StyledJsxRegistry>{children}</StyledJsxRegistry>
       </body>
     </html>
   );

@@ -10,7 +10,15 @@ const nextConfig: NextConfig = {
         port:'',
       }
     ]
-  }
+  },
+  
+  sassOptions:{
+    additionaData: `$var red;`
+  },
+
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 export default nextConfig;
