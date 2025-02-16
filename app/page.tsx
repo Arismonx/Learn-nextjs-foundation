@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import ImagePublic from '@/public/next.svg'
 import "./globals.css";
+import { Button } from '@/app/ui/button'
+import { Form } from './ui/form';
 
 export default function HomePage(){
   return (
@@ -23,6 +25,9 @@ export default function HomePage(){
       width={300}
       height={0}
       />
+      <Button />
+      <hr />
+      <Form />
     </div>
   )
 }
